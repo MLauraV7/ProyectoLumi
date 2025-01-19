@@ -9,6 +9,7 @@ body{
     background-color: rgb(235, 229, 189);
 }
 
+/* mq aplicado a todos los html */
 /* estilo mobile */
 /* estilos header */
 header{
@@ -21,7 +22,7 @@ header{
     border-radius: 1em 3em;
 }
 header img{
-    width: 10%;
+    width: 20%;
     padding-left: 20px;
 }
 header .nav-color ul{
@@ -161,6 +162,10 @@ footer{
 
 /* estilos para tablet */
 @media screen and (min-width: 600px){
+header img{
+    width: 15%;
+    padding-left: 20px;
+}
    .content{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 40%);
@@ -179,6 +184,10 @@ footer{
 
 /* estilos de desktop */
 @media screen and (min-width: 1024px){
+header img{
+    width: 10%;
+    padding-left: 20px;
+}
     .content{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 30% 30% 20%;
