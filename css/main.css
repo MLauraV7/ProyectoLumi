@@ -31,8 +31,7 @@ header .nav-color ul{
 header nav ul{
     list-style: none;
     display: flex;
-    gap: 1rem;
-    
+    gap: 1rem;   
 }
 header nav ul li a{
     color: rgb(0, 0, 0);
@@ -54,11 +53,9 @@ h1{
     text-shadow: rgba(206, 206, 205, 0.767) 5px 5px 2px;
     padding-top: 20px;
 }
-
 .textos h1{
     font-style: oblique;
 }
-
 .content{
     display: grid;
 }
@@ -70,17 +67,14 @@ h1{
     padding: 0.5rem;
     align-content: center;
 }
-
 .content img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
 .content .img-uno{
     display: none;
 }
-
 .nuestros-productos{
     color:rgb(94, 80, 12);
     font-size: 40px;
@@ -101,13 +95,11 @@ h1{
     font-size: 40px;
     text-shadow: rgb(214, 200, 175) 5px 5px 5px;
 }
-
 h2{
     color:rgb(203, 145, 43);
     padding: 10px;
     font-size: 30px;
 }
-
 h3{
     color:rgb(48, 45, 44);
     padding: 15px;
@@ -121,7 +113,6 @@ section{
     padding: 20px;
     border-radius: 1em 3em
 }
-
 section .productos div{
     display: flex;
     flex-direction: column;
@@ -130,27 +121,27 @@ section .productos div{
     display: inline-block;
     gap: 50px;
 }
-    section .productos div img{
-        width: 50%;
-    }
-    section .productos .boton{
-        display: flex;
-        background-color: rgb(205, 159, 81);
-        margin: 10px;
-        padding: 10px;
-        justify-content: center;
-        border-radius: 50px;
-    }
-    section .valoraciones{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 40px;
-        flex-direction: row;
-    }
-    section .valoraciones img{
-        width: 30%;
-    }
+section .productos div img{
+    width: 50%;
+}
+section .productos .boton{
+    display: flex;
+    background-color: rgb(205, 159, 81);
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+    border-radius: 50px;
+}
+section .valoraciones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-direction: row;
+}
+section .valoraciones img{
+    width: 30%;
+}
 
 /* estilos de footer */
 footer{
@@ -166,20 +157,20 @@ header img{
     width: 15%;
     padding-left: 20px;
 }
-   .content{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 40%);
-        column-gap: 1rem;
-   }
-    .content .img-uno{
-        display: block;
-   }
-    .content .img-cuatro{
-        grid-column: span 2;
-   }
-    .content .img-tres{
-        display: none;
-   }
+.content{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 40%);
+    column-gap: 1rem;
+}
+.content .img-uno{
+    display: block;
+}
+.content .img-cuatro{
+    grid-column: span 2;
+}
+.content .img-tres{
+    display: none;
+}
 }
 
 /* estilos de desktop */
@@ -188,17 +179,17 @@ header img{
     width: 10%;
     padding-left: 20px;
 }
-    .content{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 30% 30% 20%;
-    }
-    .content .img-tres{
-        display: block;
-    }
-    .content .img-uno{
-        grid-row: span 3;
-    }
-    .content .img-cuatro{
-        grid-row: span 2;
-    }
+.content{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30% 30% 20%;
+}
+.content .img-tres{
+    display: block;
+}
+.content .img-uno{
+    grid-row: span 3;
+}
+.content .img-cuatro{
+    grid-row: span 2;
+}
 }
