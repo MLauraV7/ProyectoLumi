@@ -6,7 +6,7 @@
 
 /* estilos generales */
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: whitesmoke;
 }
 
 /* mq aplicado a todos los html */
@@ -21,27 +21,28 @@ header{
     padding-left: 30px;
     border-radius: 1em 3em;
 }
-.logo{
+header img{
     width: 20%;
 }
 header nav ul{
     list-style: none;
     display: flex;
-    gap: 1rem;
-}
-.nav-item{
-    align-items: right;
-    text-decoration: none;
-    list-style: none;
-    justify-content: space-between;
-}
-
-.nav-link{
-    color: rgb(0, 0, 0);
-    justify-content: space-between;
-    text-align: left;
+    gap: 20px;
     text-decoration: none;
     font-size: 15px;
+}
+.nav-item{
+    text-decoration: none;
+    list-style: none;
+}
+.nav-link{
+    color: black;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+}
+.nav-link :active{
+    color: whitesmoke;
 }
 
 /* estilos de main */
@@ -112,10 +113,14 @@ h3{
 section{
     margin: 20px;
     padding: 20px;
-    border-radius: 1em 3em
 }
 .content{
     background-color: rgba(161, 246, 226, 0.272);
+    border-radius: 1em 3em;
+}
+section img{
+    width: 5%;
+    border-radius: 50px;
 }
 section .productos div{
     display: flex;
@@ -152,10 +157,6 @@ footer{
    text-align: center;
    color: rgb(0, 0, 0);
    margin-top: 2rem;
-}
-div img{
-    width: 7%;
-    border-radius: 50px;
 }
 
 /* estilos para tablet */
