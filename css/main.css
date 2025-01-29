@@ -56,7 +56,7 @@ h1{
     text-shadow: rgba(104, 143, 134, 0.281) 5px 5px 2px;
     padding-top: 20px;
 }
-.textos h1{
+.textos{
     font-style: oblique;
 }
 .content{
@@ -120,6 +120,18 @@ section{
 }
 .content{
     background-color: rgba(161, 246, 226, 0.272);
+    border-radius: 1em 3em;
+}
+.carousel-item img{
+    display: flex;
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    margin: auto;
+    border-radius: 30%;
+}
+mark{
+    background-color: whitesmoke;
     border-radius: 1em 3em;
 }
 section .productos{
