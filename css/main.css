@@ -108,6 +108,10 @@ h3{
     padding: 15px;
     font-size: 20px;
 }
+.clientes{
+    color: rgb(9, 99, 96);
+    font-size: 25px;
+}
 
 /* estilos de section */
 section{
@@ -118,28 +122,18 @@ section{
     background-color: rgba(161, 246, 226, 0.272);
     border-radius: 1em 3em;
 }
-section img{
-    width: 5%;
-    border-radius: 50px;
-}
-section .productos div{
+section .productos{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    display: inline-block;
-    gap: 50px;
+    justify-content: space-around;
 }
-section .productos div img{
-    width: 50%;
+section .productos img{
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
 }
-section .productos .boton{
-    display: flex;
-    background-color: rgba(115, 117, 116, 0.155);
-    margin: 10px;
-    padding: 10px;
-    justify-content: center;
-    border-radius: 50px;
+section div .item{
+    text-align: center;
+    margin: 20px;
 }
 section .valoraciones{
     display: flex;
@@ -150,6 +144,22 @@ section .valoraciones{
 }
 section .valoraciones img{
     width: 30%;
+}
+.formulario{
+    text-align: left;
+    margin-left: 8rem;
+    margin-right: 8rem;
+}
+div .btn{
+    margin: 0.5rem;
+}
+section .redes img{
+    width: 10%;
+    border-radius: 50%;
+    margin: 0.5rem;
+}
+section .ubicacion img{
+    border-radius: 20%;
 }
 
 /* estilos de footer */
