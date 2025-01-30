@@ -83,9 +83,7 @@ h1{
     font-size: 40px;
     text-shadow: rgba(104, 143, 134, 0.281) 5px 5px 2px;
 }
-section .tres{
-    display: none;
-}
+
 .sobre-nosotros{
     color: rgb(83, 155, 125);
     font-size: 40px;
@@ -139,12 +137,15 @@ section .productos{
 }
 section .productos img{
     width: 100%;
-    height: 20%;
+    height: 30%;
     object-fit: cover;
 }
 section div .item{
     text-align: center;
-    margin: 20px;
+    margin: 10px;
+}
+section .tres{
+    display: none;
 }
 section .valoraciones{
     display: flex;
@@ -154,22 +155,24 @@ section .valoraciones{
     flex-direction: row;
 }
 section .valoraciones img{
-    width: 30%;
+    width: 50%;
 }
 .formulario{
     text-align: left;
-    margin-left: 8rem;
-    margin-right: 8rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 div .btn{
     margin: 0.5rem;
 }
 section .redes img{
-    width: 10%;
+    width: 40%;
     border-radius: 50%;
     margin: 0.5rem;
+    margin-bottom: 2rem;
 }
 section .ubicacion img{
+    width: 50%;
     border-radius: 20%;
 }
 
@@ -211,6 +214,16 @@ section .tres{
     height: 100%;
     object-fit: cover;
 }
+section .redes img{
+    width: 20%;
+    border-radius: 50%;
+    margin: 0.5rem;
+    margin-bottom: 2rem;
+}
+section .ubicacion img{
+    width: 30%;
+    border-radius: 20%;
+}
 }
 
 /* estilos de desktop */
@@ -238,5 +251,15 @@ section .tres{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+section .redes img{
+    width: 10%;
+    border-radius: 50%;
+    margin: 0.5rem;
+    margin-bottom: 2rem;
+}
+section .ubicacion img{
+    width: 20%;
+    border-radius: 20%;
 }
 }
