@@ -130,10 +130,10 @@ mark{
     display: block;
 }
 .index img{
- width: 30%;
- height: 40%;
- border-radius: 20%;
- margin-top: 10px;
+    width: 30%;
+    height: 40%;
+    border-radius: 20%;
+    margin-top: 10px;
 }
 section .productos{
     display: flex;
