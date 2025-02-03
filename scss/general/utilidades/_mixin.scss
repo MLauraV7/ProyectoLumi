@@ -1,0 +1,29 @@
+//mixin con parametros
+@mixin grid ($grid, $column, $row){
+    display: $grid;
+    grid-template-columns: $column;
+    grid-template-rows: $row;
+}
+
+//mixin sin parametros
+@mixin flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin menu{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    font-size: 15px;
+}
+@mixin alineacion-center{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+@mixin box-model{
+    margin: 20px;
+    padding: 10px;
+}

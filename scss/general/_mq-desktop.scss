@@ -1,0 +1,36 @@
+//import mixin
+@import "../general/utilidades/mixin";
+
+//import de variables
+@import "../general/utilidades/variables";
+
+/* estilos de desktop */
+@media screen and (min-width: 1024px){
+
+/* estilos header */
+header{
+    img{
+        width: 10%;
+    }
+}
+
+/* estilos section */
+section{
+    .content{
+        @include grid(grid, repeat(3, 1fr), repeat(25% 25% 15%));
+    }
+    .img-uno{
+        grid-row: span 3;
+    }
+    .img-cuatro{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+}   
+section{
+    .ubicacion{
+        img{
+            width: 20%;
+        }
+    }
+}}

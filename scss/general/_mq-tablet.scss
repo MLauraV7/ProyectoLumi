@@ -1,0 +1,88 @@
+//import mixin
+@import "../general/utilidades/mixin";
+
+//import de variables
+@import "../general/utilidades/variables";
+
+/* estilos para tablet */
+@media screen and (min-width: 600px){
+
+    /*estilos header */
+    header{
+        img{
+            width: 15%;
+            padding-left: 20px;
+        }
+    }
+
+    /*estilos main */
+    main{
+        h1{
+            font-size: 40px;
+            padding-top: 20px;
+        }
+        h2{
+            padding: 10px;
+            font-size: 30px;
+        }
+        h3{
+            padding: 15px;
+            font-size: 20px;
+        }
+        h4{
+            font-size: 15px;
+        }
+        h5{
+            font-size: 15px;
+        }
+    }
+
+    /* estilos section */
+    section{
+        .index{
+            img{
+                margin-top: 20px;
+            }
+        }
+    }
+    section{
+        .productos{
+            .item{
+                .tres{
+                    display: block;
+                    width: 100%;
+                    height: 100%; 
+                }
+            }
+        }
+    }
+    section{    
+        .valoraciones{
+            .tres{
+                display: block; 
+            }
+        }
+    }
+    section{
+        .content{
+            @include grid(grid, repeat(3, 1fr), repeat(25% 25% 15%));
+        }
+        .img-uno{
+            display: block;
+            grid-row: span 2;
+        }
+        .img-tres{
+            display: block;
+        }
+        .img-cuatro{
+            grid-column: span 2;
+        }
+    }   
+    section{
+        .redes{
+            img{
+                width: 10%;
+            }
+        }
+    }
+}

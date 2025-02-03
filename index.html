@@ -28,7 +28,7 @@
                         <a class="nav-link active" aria-current="page" href="./index.html"><em>Home</em></a>
                     </li>
                     <li class="nav-item animate__animated animate__backInLeft">
-                        <a class="nav-link" href="./pages/productos.html"><em>Productos</em></a>
+                        <a class="nav-link active" href="./pages/productos.html"><em>Productos</em></a>
                     </li>
                     <li class="nav-item animate__animated animate__backInLeft">
                         <a class="nav-link active" href="./pages/valoraciones.html"><em>Valoraciones</em></a>
@@ -45,10 +45,8 @@
     </header>
     <!-- etiqueta para el contenido principal -->
     <main>
-        <div class="textos">
-            <h1>LumiStore</h1>
-            <h2>Encontrá los mejores productos para tu mascota</h2>
-        </div>
+        <h1>LumiStore</h1>
+        <h2>Encontrá los mejores productos para tu mascota</h2>
         <!-- etiqueta para la sección del carrusel -->
         <section class="carrusel">
             <div id="carouselExampleDark" class="carousel carousel-dark slide">
@@ -57,28 +55,27 @@
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="./img/protector.jpg" class="d-block w-100" alt="Gato arañando sofá">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="./img/protector.jpg" class="d-block w-100" alt="Gato arañando sofá">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5><mark><strong>Conocé la importancia de la estimulación felina</strong></mark></h5>
+                            <h5><mark>Un gato "indoor" tiene carencias que necesitamos cubrir para que sea feliz y se sienta realizado.</mark></h5>
+                        </div>
+                    </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./img/ambiente-cuidado.jpg" class="d-block w-100" alt="Gatos jugando en una habitación dinámica y cuidada">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5><mark>Conocé la importancia de la estimulación felina</mark></h5>
-                        <p><mark>Un gato "indoor" tiene carencias que necesitamos cubrir para que sea feliz y se sienta realizado.</mark></p>
+                        <h5><mark><strong>Nuestros productos crean un ambiente cuidado</strong></mark></h5>
+                        <h5><mark>Cada gato necesita un tipo diferente de estimulación y juego, no todos son iguales.</mark></h5>
                     </div>
                 </div>
-            <div class="carousel-item" data-bs-interval="2000">
-                <img src="./img/ambiente-cuidado.jpg" class="d-block w-100" alt="Gatos jugando en una habitación dinámica y cuidada">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5><mark>Nuestros productos crean un ambiente cuidado</mark></h5>
-                  <p><mark>Cada gato necesita un tipo diferente de estimulación y juego, no todos son iguales.</mark></p>
-                </div>
-            </div>
             <div class="carousel-item">
                 <img src="./img/carrito-de-compra.jpg" class="d-block w-100" alt="mini carrito de compras sobre pc simulando compra online ">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5><mark>¿Cómo realizar la compra?</mark></h5>
-                  <p><mark>Accedé al apartado de nuestros productos y conocé nuestros medios de pago y envíos.</mark></p>
+                  <h5><mark><strong>¿Cómo realizar la compra?</strong></mark></h5>
+                  <h5><mark>Accedé al apartado de nuestros productos y conocé nuestros medios de pago y envíos.</mark></h5>
                 </div>
-              </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -92,9 +89,10 @@
         </section>
         <!-- etiqueta para la sección de información de envíos y formas de pago -->
         <section class="promo-envio">
+            <div class="promo-envio">
             <div class="index">
                 <img src="./img/tarjeta-bancaria.jpg" alt="imagen animada de tarjeta bancaria">
-                <h5><span>Conocé nuestras </span><span>promociones bancarias</span></5>
+                <h5><span>Conocé nuestras </span><span>promociones bancarias</span></h5>
             </div>
             <div class="index">
                 <img src="./img/tienda.png" alt="imagen animada tienda de compras">
@@ -103,6 +101,7 @@
             <div class="index">
                 <img src="./img/condiciones.jpg" alt="imagen animada documento formato papel">
                 <h5>Consultá términos <span>y condiciones</span></h5>
+            </div>
             </div>
         </section>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

@@ -1,0 +1,237 @@
+//import de variables
+@import "../general/utilidades/variables";
+
+//import de mixin
+@import "../general/utilidades/mixin";
+
+/* estilos de header */
+header{
+    @include flex;
+    background: $color-header;
+    padding-right: 30px;
+    padding-left: 20px;
+    border-radius: 1em 3em;
+    img{
+        width: 20%;
+    }
+    nav{
+        ul{
+            @include menu;
+            li{
+                text-decoration: none;
+                list-style: none;
+                a{
+                    justify-content: center;
+                    text-align: center;
+                    text-decoration: none;
+                    :active{
+                        color: whitesmoke;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*estilos de main */
+main{
+    height: auto;
+    @include alineacion-center;
+    font-style: oblique;
+    .clientes{
+        color: rgb(9, 99, 96);
+        font-size: 25px;
+    }
+    h1{
+        color: $color-h1;
+        text-shadow: $color-sombra;
+        font-size: 25px;
+        padding-top: 20px;
+    }
+    h2{
+        padding: 15px;
+        font-size: 20px;
+    }
+    h3{
+        color: $color-h3;
+        padding: 10px;  
+        font-size: 15px;
+    }
+    .sale{
+        background-color: rgb(32, 105, 102);
+        color: whitesmoke;
+        justify-content: center;
+        text-align: center;
+        margin-top: 30px;
+    }
+    h4{
+        color: $color-h4;
+        font-size: 10px;
+    }
+    h5{
+        font-size: 10px;
+    }
+}
+
+/*estilos section */
+section{
+    @include box-model;
+    div{
+        div{
+            .carousel-item{
+                img{
+                    display: flex;
+                    width: 80%;
+                    max-width: 500px;
+                    height: auto;
+                    margin: auto;
+                    border-radius: 30%;
+                }
+                div{
+                    h5{
+                        mark{
+                            background: linear-gradient(63deg, rgba(245,236,213,0.25271358543417366) 0%, rgba(255,250,236,0.6784838935574229) 50%, rgba(255,255,255,0.3087359943977591) 78%, rgba(255,255,255,0.4852065826330533) 89%);
+                            border-radius: 1em 3em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .promo-envio{
+        @include flex;
+        background-color: rgba(255, 255, 255, 0.317);
+        margin: 0%;
+        gap: 20px;
+        align-items: center;
+        img{
+            width: 20%;
+            height: 40%;
+            border-radius: 20%;
+            margin-top: 10px;
+            justify-content: space-between;
+        }
+        h5{
+            span{
+            display: block;
+            }
+        }
+    }
+}
+section{
+    .productos{
+        display: flex;
+        justify-content: space-around;
+        img{
+            width: 100%;
+            height: 30%;
+            object-fit: cover;
+            margin-top: 10px;
+        }
+        .item{
+            text-align: center;
+            margin: 10px;
+            .tres{
+                display: none;
+            }
+        }
+    }
+}
+section{          
+    .ofertas{
+        @include flex;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1rem;
+        .ofertas{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .card{
+        width: 100%
+        }
+        .card-img-top{
+            width: 100%;
+            height: auto;
+        }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            .card-title {
+            font-size: 15px;
+            margin-bottom: 0.75rem;
+            }
+            .card-text {
+            font-size: 15px;
+            margin-bottom: 1rem;
+            }
+        }
+    }
+}
+section{    
+    .valoraciones{
+        @include flex;
+        gap: 10px;
+        img{
+            width: 20%;
+        }
+        .tres{
+            display: none;
+        }
+    }
+    .formulario{
+        text-align: left;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        div{
+            .btn{
+                margin: 0.5rem;
+            }
+        }
+    }
+}
+section{
+    .content{
+        @include grid(grid, 1fr, repeat(3, 20%));
+        padding: 1rem;
+        gap: 1rem;
+    }
+    div{
+        img{
+           height: 100%;
+           object-fit: cover;
+           width: 100%; 
+        }
+    }
+    .img-uno{
+        display: none;
+    }
+    }
+section{
+    .redes{
+        justify-content: center;
+        height: auto;
+        img{
+            width: 20%;
+            border-radius: 50%;
+            margin: 0.5rem;
+            margin-bottom: 2rem;
+        }
+    }
+    .ubicacion{
+        img{
+            width: 30%;
+            border-radius: 20%;
+        }
+    }
+}
+
+/* estilos de footer */
+footer{
+text-align: center;
+color: rgb(0, 0, 0);
+margin-top: 2rem;
+}
