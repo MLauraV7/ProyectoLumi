@@ -185,9 +185,10 @@ section .valoraciones {
 section .valoraciones img {
   width: 50%;
 }
-section .valoraciones .tres {
+section .valoraciones .tres-val {
   display: none;
 }
+
 section .formulario {
   text-align: left;
   margin-left: 2rem;
@@ -270,6 +271,15 @@ footer {
     width: 100%;
     height: 100%;
   }
+  section .valoraciones {
+    margin: 20px;
+  }
+  section .valoraciones img {
+    width: 30%;
+  }
+  section .valoraciones .tres-val {
+    display: block;
+  }
   section .content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -307,6 +317,12 @@ footer {
   section .img-cuatro {
     grid-column: span 2;
     grid-row: span 2;
+  }
+  section .valoraciones {
+    margin: 20px;
+  }
+  section .valoraciones img {
+    width: 40%;
   }
   section .ubicacion img {
     width: 20%;

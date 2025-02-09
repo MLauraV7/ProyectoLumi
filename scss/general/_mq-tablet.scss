@@ -58,7 +58,11 @@
     }
     section{    
         .valoraciones{
-            .tres{
+            margin: 20px;
+            img{
+                width: 30%;
+            }
+            .tres-val{
                 display: block; 
             }
         }

@@ -176,12 +176,14 @@ section{
         @include flex;
         gap: 10px;
         img{
-            width: 20%;
-        }
-        .tres{
-            display: none;
-        }
+            width: 50%;
+        }  
+        .tres-val{
+            display: none;  
+        }  
     }
+}
+section{    
     .formulario{
         text-align: left;
         margin-left: 2rem;
