@@ -10,7 +10,6 @@ header{
     background: $color-header;
     padding-right: 30px;
     padding-left: 20px;
-    border-radius: 1em 3em;
     img{
         width: 20%;
     }
@@ -28,6 +27,9 @@ header{
                         color: whitesmoke;
                     }
                 }
+                em{
+                    color:antiquewhite;
+                }
             }
         }
     }
@@ -38,15 +40,17 @@ main{
     height: auto;
     @include alineacion-center;
     font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     .clientes{
         color: rgb(9, 99, 96);
         font-size: 25px;
     }
     h1{
-        color: $color-h1;
-        text-shadow: $color-sombra;
-        font-size: 25px;
-        padding-top: 20px;
+        color: rgb(0, 0, 0);
+        text-shadow: 1px 1px 0px rgb(247, 248, 245);
+        font-size: 30px;
+        padding: 20px;
+        background-image: url(https://img.freepik.com/vector-premium/marco-borde-acuarela-flores-magnolia-azul-transparente-flores-magnolia-transparente_252097-560.jpg?w=360);
     }
     h2{
         padding: 15px;
@@ -58,7 +62,7 @@ main{
         font-size: 15px;
     }
     .sale{
-        background-color: rgb(32, 105, 102);
+        background-color: rgb(95, 32, 105);
         color: whitesmoke;
         justify-content: center;
         text-align: center;
@@ -100,10 +104,11 @@ section{
     }
     .promo-envio{
         @include flex;
-        background-color: rgba(255, 255, 255, 0.317);
+        background-color: rgba(216, 207, 229, 0.511);
         margin: 0%;
         gap: 20px;
         align-items: center;
+        border-radius: 4rem 2rem 4rem 2rem;
         img{
             width: 20%;
             height: 40%;
@@ -128,6 +133,7 @@ section{
             height: 30%;
             object-fit: cover;
             margin-top: 10px;
+            border-radius: 20%;
         }
         .item{
             text-align: center;
@@ -150,11 +156,18 @@ section{
             justify-content: space-between;
         }
         .card{
-        width: 100%
+        width: 100%;
+        height: 400px;
+        background: linear-gradient(63deg, rgba(255, 255, 255, 0.317),#fffffffe);
+        transition: transform 1s ease, box-shadow 1s ease;
+        }
+        .card:hover{
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         .card-img-top{
             width: 100%;
-            height: auto;
+            height: 200px;
         }
         .card-body {
             display: flex;
@@ -174,25 +187,27 @@ section{
 }
 section{    
     .valoraciones{
-        @include flex;
+        display: flex;
+        justify-content: center;
         gap: 10px;
         img{
-            width: 50%;
-        }  
+            width: 40%;
+            align-items: center;
+            justify-content: center;
+        } 
         .tres-val{
             display: none;  
         }  
     }
 }
 section{    
-    .formulario{
+    .mb-3{
+        margin: 40px;
         text-align: left;
-        margin-left: 2rem;
-        margin-right: 2rem;
-        div{
-            .btn{
-                margin: 0.5rem;
-            }
+        .btn{
+            margin: 0.5rem;
+            background-color: rgb(32, 105, 102);
+            border-color: rgb(32, 105, 102);
         }
     }
 }
