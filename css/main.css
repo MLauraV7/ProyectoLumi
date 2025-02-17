@@ -62,17 +62,18 @@ main .clientes {
 main h1 {
   color: rgb(0, 0, 0);
   text-shadow: 1px 1px 0px rgb(247, 248, 245);
-  font-size: 30px;
-  padding: 20px;
+  font-size: 40px;
+  padding: 30px;
   background-image: url(https://img.freepik.com/vector-premium/marco-borde-acuarela-flores-magnolia-azul-transparente-flores-magnolia-transparente_252097-560.jpg?w=360);
 }
 main h2 {
   padding: 15px;
   font-size: 20px;
+  text-shadow: rgba(83, 55, 107, 0.281) 5px 5px 2px;
 }
 main h3 {
   color: rgb(48, 45, 44);
-  padding: 10px;
+  padding: 15px;
   font-size: 15px;
 }
 main .sale {
@@ -84,7 +85,7 @@ main .sale {
 }
 main h4 {
   color: rgb(32, 105, 102);
-  font-size: 10px;
+  font-size: 15px;
 }
 main h5 {
   font-size: 10px;
@@ -92,7 +93,7 @@ main h5 {
 
 /*estilos section */
 section {
-  margin: 20px;
+  margin: 30px;
 }
 section div div .carousel-item img {
   display: flex;
@@ -102,7 +103,7 @@ section div div .carousel-item img {
   margin: auto;
   border-radius: 30%;
 }
-section div div .carousel-item div h5 mark {
+section div div .carousel-item div h3 mark {
   background: linear-gradient(63deg, rgba(245, 236, 213, 0.2527135854) 0%, rgba(255, 250, 236, 0.6784838936) 50%, rgba(255, 255, 255, 0.3087359944) 78%, rgba(255, 255, 255, 0.4852065826) 89%);
   border-radius: 1em 3em;
 }
@@ -111,7 +112,6 @@ section .promo-envio {
   align-items: center;
   justify-content: space-between;
   background-color: rgba(216, 207, 229, 0.511);
-  margin: 0%;
   gap: 20px;
   align-items: center;
   border-radius: 4rem 2rem 4rem 2rem;
@@ -127,7 +127,6 @@ section .promo-envio img {
 section .promo-envio h5 span {
   display: block;
 }
-
 section .productos {
   display: flex;
   justify-content: space-around;
@@ -146,7 +145,6 @@ section .productos .item {
 section .productos .item .tres {
   display: none;
 }
-
 section .ofertas {
   display: flex;
   align-items: center;
@@ -188,7 +186,6 @@ section .ofertas .card-body .card-text {
   font-size: 15px;
   margin-bottom: 1rem;
 }
-
 section .valoraciones {
   display: flex;
   justify-content: center;
@@ -202,7 +199,6 @@ section .valoraciones img {
 section .valoraciones .tres-val {
   display: none;
 }
-
 section .mb-3 {
   margin: 40px;
   text-align: left;
@@ -212,29 +208,27 @@ section .mb-3 .btn {
   background-color: rgb(32, 105, 102);
   border-color: rgb(32, 105, 102);
 }
-
 section .content {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 20%);
-  padding: 1rem;
   gap: 1rem;
 }
-section div img {
+section .content img {
   height: 100%;
   object-fit: cover;
   width: 100%;
+  border: 4px solid black;
 }
 section .img-uno {
   display: none;
 }
-
 section .redes {
   justify-content: center;
   height: auto;
 }
 section .redes img {
-  width: 30%;
+  width: 20%;
   border-radius: 50%;
   margin: 0.5rem;
   margin-bottom: 2rem;
@@ -261,7 +255,7 @@ footer {
   /*estilos main */
   main h1 {
     font-size: 50px;
-    padding-top: 20px;
+    padding: 35px;
   }
   main h2 {
     padding: 10px;
@@ -286,6 +280,10 @@ footer {
     width: 100%;
     height: 100%;
   }
+  section .ofertas .card-img-top {
+    width: 100%;
+    height: 200px;
+  }
   section .valoraciones {
     margin: 20px;
   }
@@ -298,7 +296,7 @@ footer {
   section .content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(25% 25% 15%);
+    grid-template-rows: repeat(3, 25%);
   }
   section .img-uno {
     display: block;
@@ -310,8 +308,8 @@ footer {
   section .img-cuatro {
     grid-column: span 2;
   }
-  section .redes img {
-    width: 20%;
+  section .ubicacion img {
+    width: 30%;
   }
 }
 /* estilos de desktop */
@@ -324,7 +322,7 @@ footer {
   section .content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(25% 25% 15%);
+    grid-template-rows: repeat(3, 25%);
   }
   section .img-uno {
     grid-row: span 3;

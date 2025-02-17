@@ -48,17 +48,18 @@ main{
     h1{
         color: rgb(0, 0, 0);
         text-shadow: 1px 1px 0px rgb(247, 248, 245);
-        font-size: 30px;
-        padding: 20px;
+        font-size: 40px;
+        padding: 30px;
         background-image: url(https://img.freepik.com/vector-premium/marco-borde-acuarela-flores-magnolia-azul-transparente-flores-magnolia-transparente_252097-560.jpg?w=360);
     }
     h2{
         padding: 15px;
         font-size: 20px;
+        text-shadow: $color-sombra; 
     }
     h3{
         color: $color-h3;
-        padding: 10px;  
+        padding: 15px;  
         font-size: 15px;
     }
     .sale{
@@ -70,7 +71,7 @@ main{
     }
     h4{
         color: $color-h4;
-        font-size: 10px;
+        font-size: 15px;
     }
     h5{
         font-size: 10px;
@@ -92,7 +93,7 @@ section{
                     border-radius: 30%;
                 }
                 div{
-                    h5{
+                    h3{
                         mark{
                             background: linear-gradient(63deg, rgba(245,236,213,0.25271358543417366) 0%, rgba(255,250,236,0.6784838935574229) 50%, rgba(255,255,255,0.3087359943977591) 78%, rgba(255,255,255,0.4852065826330533) 89%);
                             border-radius: 1em 3em;
@@ -105,7 +106,6 @@ section{
     .promo-envio{
         @include flex;
         background-color: rgba(216, 207, 229, 0.511);
-        margin: 0%;
         gap: 20px;
         align-items: center;
         border-radius: 4rem 2rem 4rem 2rem;
@@ -119,7 +119,7 @@ section{
         }
         h5{
             span{
-            display: block;
+                display: block;
             }
         }
     }
@@ -169,18 +169,18 @@ section{
             width: 100%;
             height: 200px;
         }
-        .card-body {
+        .card-body{
             display: flex;
             flex-direction: column;
             align-items: center;
             padding: 1rem;
             .card-title {
-            font-size: 15px;
-            margin-bottom: 0.75rem;
+                font-size: 15px;
+                margin-bottom: 0.75rem;
             }
-            .card-text {
-            font-size: 15px;
-            margin-bottom: 1rem;
+            .card-text{
+                font-size: 15px;
+                margin-bottom: 1rem;
             }
         }
     }
@@ -214,26 +214,26 @@ section{
 section{
     .content{
         @include grid(grid, 1fr, repeat(3, 20%));
-        padding: 1rem;
         gap: 1rem;
     }
-    div{
-        img{
-           height: 100%;
-           object-fit: cover;
-           width: 100%; 
+        .content{
+            img{
+                height: 100%;
+                object-fit: cover;
+                width: 100%;
+                border: 4px solid black;
+            }
         }
-    }
     .img-uno{
         display: none;
     }
-    }
+}
 section{
     .redes{
         justify-content: center;
         height: auto;
         img{
-            width: 30%;
+            width: 20%;
             border-radius: 50%;
             margin: 0.5rem;
             margin-bottom: 2rem;
